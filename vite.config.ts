@@ -21,11 +21,13 @@ export default defineConfig({
       }
     },
     chunkSizeWarningLimit: 1000,
+    assetsDir: 'assets',
+    copyPublicDir: true,
   },
   resolve: {
     alias: {
       '@': resolve(__dirname, './src'),
     },
   },
-  assetsInclude: ['**/*.txt'],
-}); 
+  assetsInclude: ['**/*.txt', '**/*.jpg', '**/*.png', '**/*.svg'],
+});
